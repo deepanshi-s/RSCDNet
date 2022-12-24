@@ -1,0 +1,7 @@
+Python 3
+
+Libraries
+os
+cv2
+sys
+skimage
