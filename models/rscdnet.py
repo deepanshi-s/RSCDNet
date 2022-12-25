@@ -25,3 +25,6 @@ def self_attention(b5):
     #add attention gate instead of the add function
     attention = Add()([attention,b5])
     return(attention)
+
+
+def modelDef():

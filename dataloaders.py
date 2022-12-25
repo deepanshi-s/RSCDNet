@@ -119,10 +119,10 @@ def dataLoaders(trainPath, valPath, imageA_folder, imageB_folder, mask_folder, b
     Returns:
         _type_: _description_
     """
-    trainDataloader = dataGenerator(train_path=trainPath, image1_folder=imageA_folder, image2_folder=imageB_folder, mask_folder=mask_folder,
+    trainDataloader = dataGenerator(aug_dict = dict(), train_path=trainPath, image1_folder=imageA_folder, image2_folder=imageB_folder, mask_folder=mask_folder,
                                     batch_size=batch_size, save_to_dir=None, image_size=image_size)
     
-    valDataLoader = dataGenerator(train_path=valPath, image1_folder=imageA_folder, image2_folder=imageB_folder, mask_folder=mask_folder,
+    valDataLoader = dataGenerator(aug_dict = dict(), train_path=valPath, image1_folder=imageA_folder, image2_folder=imageB_folder, mask_folder=mask_folder,
                                     batch_size=batch_size, save_to_dir=None, image_size=image_size)
 
     return trainDataloader, valDataLoader
