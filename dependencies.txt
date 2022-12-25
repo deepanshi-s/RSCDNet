@@ -2,6 +2,8 @@ Python 3
 
 Libraries
 os
+numpy
 cv2
 sys
 skimage
+keras
