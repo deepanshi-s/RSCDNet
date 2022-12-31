@@ -4,12 +4,12 @@ Created by <a href="https://www.linkedin.com/in/deepanshi-d/" target="_blank">De
 
 
 
-![RSCDNet Architecture](Images/archi_f.png)|
+![RSCDNet Architecture](images/archi_f.png)|
 |:--:|
 | <b> Fig.1 - RSCDNet Architecture</b>|
 
 ## Introduction
-This work is based on the <a href="" target>paper</a>, which was published in IEEE Transcations on Emerging Topics in Computational Intelligence. We propose a novel architecture, RSCDNet for accurate binary segmentation of change area from bi-temporal images.
+This work is based on the <a href="https://ieeexplore.ieee.org/document/10004200" target>paper</a>, which was published in IEEE Transcations on Emerging Topics in Computational Intelligence. We propose a novel architecture, RSCDNet for accurate binary segmentation of change area from bi-temporal images.
 
 Accurate change detection from high-resolution satellite and aerial images is of great significance in remote sensing for precise comprehension of Land cover (LC) variations. The current methods compromise with the spatial context; hence, they fail to detect and delineate small change areas and are unable to capture the difference between features of the bi-temporal images. This paper proposes Remote Sensing Change Detection Network (RSCDNet) - a robust end-to-end deep learning architecture for pixel-wise change detection from bi-temporal high-resolution remote-sensing (HRRS) images. The proposed RSCDNet model is based on an encoder-decoder framework integrated with the Modified Self-Attention (MSA) andthe Gated Linear Atrous Spatial Pyramid Pooling (GL-ASPP) blocks; both  efficient mechanisms to regulate the field-of-view while finding the most suitable trade-off between accurate localization and context assimilation. The paper documents the design and development of the proposed RSCDNet model and compares its qualitative and quantitative results with state-of-the-art HRRS change detection architectures. The above mentioned novelties in the proposed architecture resulted in an F1-score of 98%, 98%, 88%, and 75% on the four publicly available HRRS datasets namely, Staza-Tisadob, Onera, CD-LEVIR, and WHU. In addition to the improvement in the performance metrics, the strategic connections in the proposed <b>GL-ASPP</b> and <b>MSA</b> units significantly reduce the prediction time per image (PTPI) and provide robustness against perturbations. Experimental results yield that the proposed RSCDNet model outperforms the most recent change detection benchmark models on all four HRRS datasets.
 
@@ -18,11 +18,11 @@ Accurate change detection from high-resolution satellite and aerial images is of
 * The proposed model effectively utilizes a Modified Self-Attention (MSA) mechanism at the bottleneck to incorporate the spatial dependencies existing in the obtained features. A gate is integrated into one of the feature spaces in the MSA block to highlight the salient channels. 
 * The processed features are subsequently passed through a newly introduced  6-Level Gated Linear Atrous Spatial Pyramid Pooling (GL-ASPP) block to capture a larger field of view. The addition of the gated linear unit after concatenation of the dilated features helps to suppress irrelevant channel information.
 
-![RSCDNet Architecture](Images/GLASPP.png)|
+![RSCDNet Architecture](images/GLASPP.png)|
 |:--:|
 | <b> Fig.2 - Proposed GL-ASPP block</b>|
 
-![RSCDNet Architecture](Images/MSA_r.png)|
+![RSCDNet Architecture](images/MSA_r.png)|
 |:--:|
 | <b> Fig.3 - Proposed MSA block</b>|
 
@@ -49,11 +49,11 @@ To evaluate the model
 
 
 ## Results 
-![RSCDNet Architecture](Images/dataset1.png)|
+![RSCDNet Architecture](images/dataset1.png)|
 |:--:|
 |<b> Fig.4 - Test images of the datasets Col I: Dataset I (23 years of time difference), Col II: Dataset II (between 2015 and 2018), Col III: Dataset III (between 2002 and 2018), and Col IV: Dataset IV (between 2012 and 2016) </b>|
 
-![RSCDNet Architecture](Images/predictions.png)|
+![RSCDNet Architecture](images/predictions.png)|
 |:--:|
 |<b> Fig.5 - edicted change map of proposed RSCDNet on the test images.  Col I: Dataset I, Col II: Dataset II, Col III: Dataset III, Col IV: Dataset IV </b>|
 
@@ -71,4 +71,15 @@ DSMSCN                      |0.85|0.855 |0.852 |0.846 |0.761 |0.945 |
 |AGCDetNet                 |0.85| 0.845 | 0.863 | 0.855 | 0.752 | 0.981|
 
 ## Citation
-If you find our work useful if your research, please consider citing:
+If you find our work useful in your research, please consider citing:  
+
+    @ARTICLE{10004200,
+        author={Deepanshi and Barkur, Rahasya and Suresh, Devishi and Lal, Shyam and Reddy, C. Sudhakar and Diwakar, P. G.},
+        journal={IEEE Transactions on Emerging Topics in Computational Intelligence}, 
+        title={RSCDNet: A Robust Deep Learning Architecture for Change Detection From Bi-Temporal High Resolution Remote Sensing Images}, 
+        year={2022},
+        volume={},
+        number={},
+        pages={1-15},
+        doi={10.1109/TETCI.2022.3230941}
+    }
