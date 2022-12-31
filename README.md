@@ -72,4 +72,4 @@ DSMSCN                      |0.85|0.855 |0.852 |0.846 |0.761 |0.945 |
 
 ## Citation
 If you find our work useful if your research, please consider citing:
-    @ARTICLE{10004200,  author={Deepanshi and Barkur, Rahasya and Suresh, Devishi and Lal, Shyam and Reddy, C. Sudhakar and Diwakar, P. G.},  journal={IEEE Transactions on Emerging Topics in Computational Intelligence},   title={RSCDNet: A Robust Deep Learning Architecture for Change Detection From Bi-Temporal High Resolution Remote Sensing Images},   year={2022},  volume={},  number={},  pages={1-15},  doi={10.1109/TETCI.2022.3230941}}
+
