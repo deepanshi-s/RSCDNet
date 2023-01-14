@@ -82,7 +82,7 @@ def self_attention(b5):
 
 
 
-def siam_model(input_shape):
+def modelDef(input_shape):
     
     input_size=(input_shape)
 
@@ -181,5 +181,3 @@ def siam_model(input_shape):
     model = Model(inputs=[input1,input2],outputs=[out])
     print(model.summary())
     return model
-
-final_model = siam_model((512,512,3))
