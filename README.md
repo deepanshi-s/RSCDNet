@@ -45,6 +45,7 @@ To train the model
     python training.py --trainPath CD_LEVIR/train --valPath CD_LEVIR/val --imageA_folder img1 --imageB_folder img2 --mask_folder label --batch_size 8 --image_size 1024 --epochs 100 --directory models --modelName rscdnet --len_validation_data 30 --len_train_data 512
 
 To evaluate the model
+
     python test.py --testPath --imageA_folder --imageB_folder --maks_folder --modelDirectory --modelName
 
 
